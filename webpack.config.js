@@ -61,9 +61,12 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("../css/[name].css"),
-    // new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin(
-      [{from:'./index.html', to: '../'}]
+      [
+        {from:'./index.html', to: '../'},
+        {from:'./img', to: '../img'}
+      ]
     )
   ]
 };
