@@ -151,6 +151,16 @@ progress {
   }
 }
 
+.progress-webkit{
+  border-radius: 10px;
+  &::-moz-progress-bar {
+    border-radius: 10px;
+  }
+  &::-webkit-progress-value {
+    border-radius: 10px;
+  }
+}
+
 .progress__val {
   display: inline-block;
   width: 20px;

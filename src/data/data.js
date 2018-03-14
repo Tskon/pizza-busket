@@ -22,8 +22,7 @@ const basket = [
   }
 ];
 
-const basketProgress = 37
-;
+const basketProgress = 37;
 
 export default {
   basket,

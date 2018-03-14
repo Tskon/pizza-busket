@@ -2,6 +2,13 @@ window.addEventListener('load', () => {
   const progress = document.querySelector('.progress progress');
   const progressVal = document.querySelector('.progress__val');
 
+  if (progress.dataset.progress > 97){
+    progress.classList.add('progress-webkit');
+  }
+  if (progress.dataset.progress > 99){
+    progress.style.border = 'none';
+  }
+
   progress.value = progress.dataset.progress;
   progressVal.innerHTML = progress.dataset.progress + "%";
 
